@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+<style>
+  body {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #239cd8;
+  }
+  #calculator {
+    background-color: #17e2e2;
+    border-radius: 50px;
+    
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px #000000;
+  }
+  #result {
+    width: 100%;
+    border-radius: 0.5rem;
+    height: 38px;
+    text-align: left;
+    margin-top: 5px;
+    padding: 6px;
+    font-size: small;
+    border: 1px solid #090909;
+    background-color: #ebe5e5;
+  }
+  .button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #f0f5f6;
+    border: 1px solid #0a0a0a;
+    border-radius: 5px;
+  }
+  .button.operator {
+    color: #0c0c0c;
+    background-color: #ededed;
+  }
+  .button.clear {
+  
+    background-color: #ee0d0d;
+    width: 70px;
+    
+  }
+  .a{
+    display: flex;
+  }
+  h1{
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div id="calculator">
+    <h1>CALCULATOR</h1>
+    <div class="a">
+  <input placeholder="Result" id="result">
+  <div class="button clear">C</div></div>
+  <div class="button">1</div>
+  <div class="button">2</div>
+  <div class="button">3</div>
+  <div class="button operator">+</div><br>
+  <div class="button">4</div>
+  <div class="button">5</div>
+  <div class="button">6</div>
+  <div class="button operator">-</div><br>
+  <div class="button">7</div>
+  <div class="button">8</div>
+  <div class="button">9</div>
+  <div class="button operator">*</div><br>
+  <div class="button operator">/</div>
+  <div class="button">0</div>
+  <div class="button operator">.</div>
+  <div class="button operator">=</div>
+</div>
+</body>
+</html>
